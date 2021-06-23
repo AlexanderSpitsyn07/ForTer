@@ -1,3 +1,9 @@
+provider "aws" {
+   region = "us-east-1"
+   access_key = "AKIAWGO7EI3EUTKH756"
+   secret_key = "S0ZhR9/AlhVP26T9ZYJsjO5EJ8HpCub/keW2XeLS"
+}
+
 resource "aws_instance" "ec2_instance" {
     ami = data.aws_ami.ubuntu.id
     instance_type = "t3.micro"
